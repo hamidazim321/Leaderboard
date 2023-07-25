@@ -1,0 +1,11 @@
+h1 {
+  color: red;
+}
+
+img {
+  width: 200px;
+}
+
+body {
+  background-image: url('./assets/car-desktop.jpg');
+}

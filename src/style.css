@@ -1,0 +1,38 @@
+#Main {
+  display: flex;
+  gap: 10%;
+}
+
+.inline-b {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+#players {
+  border: solid 2px;
+  overflow-y: auto;
+  height: 20vh;
+}
+
+#addScore {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#scoreList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.player {
+  padding: 0 2%;
+}
+
+.player:nth-child(even) {
+  background-color: rgb(172, 172, 172);
+}

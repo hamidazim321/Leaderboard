@@ -1,32 +1,31 @@
-import addScore from "./addScore";
-import { getStorage, setStorage } from "./localStorage"
+import addScore from './addScore.js';
+import { getStorage, setStorage } from './localStorage.js';
 
 function isNumber(value) {
   return /^\d+$/.test(value);
 }
 
 function handleScore() {
-  const name = document.querySelector('#inputName').value
-  const score = document.querySelector('#inputScore').value
-  if (isNumber(score)){
-    let arr = getStorage()
+  const name = document.querySelector('#inputName').value;
+  const score = document.querySelector('#inputScore').value;
+  if (isNumber(score)) {
+    const arr = getStorage();
     const obj = {
-      name: name, 
-      score: score
-    }
+      name,
+      score,
+    };
 
-    addScore(name,score)
-    arr.push(obj)
-    setStorage(arr)
+    addScore(name, score);
+    arr.push(obj);
+    setStorage(arr);
   }
 }
 
 function submitScore() {
-  const button = document.querySelector('#Submit')
-  button.addEventListener('click', ()=> {
-    handleScore()
-  })
+  const button = document.querySelector('#Submit');
+  button.addEventListener('click', () => {
+    handleScore();
+  });
 }
 
-export default submitScore
-
+export default submitScore;

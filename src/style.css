@@ -1,11 +1,27 @@
-h1 {
-  color: red;
+#Main {
+  display: flex;
+  gap: 10%;
 }
 
-img {
-  width: 200px;
+.inline-b {
+  display: inline-block;
 }
 
-body {
-  background-image: url('./assets/car-desktop.jpg');
+.block {
+  display: block;
+}
+
+/* #scores {
+
+} */
+#players {
+  border: solid 2px;
+  overflow-y: auto;
+  height: 20vh;
+}
+
+#addScore {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }

@@ -32,6 +32,7 @@
 .player {
   padding: 0 2%;
 }
+
 .player:nth-child(even) {
   background-color: rgb(172, 172, 172);
 }

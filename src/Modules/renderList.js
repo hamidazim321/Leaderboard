@@ -1,4 +1,4 @@
-import url from "./ScoreURL";
+import url from "./ScoreURL.js";
 
 const getScore = async () => {
   const response = await fetch(url);
@@ -28,4 +28,4 @@ function renderScore() {
   });
 }
 
-export default renderScore;
+export {renderScore, handleRefesh}

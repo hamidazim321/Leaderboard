@@ -18,7 +18,7 @@
 }
 
 #addScore,
-#InputForm {
+#inputForm {
   display: flex;
   flex-direction: column;
   gap: 1em;

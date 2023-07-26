@@ -10,6 +10,7 @@ h1 {
   font-size: 4vw;
   font-weight: 900;
 }
+
 p {
   font-size: 2vw;
   font-weight: 600;
@@ -29,10 +30,9 @@ input {
   font-weight: 600;
 }
 
-input::placeholder{
+input::placeholder {
   color: black;
 }
-
 
 #Main {
   display: flex;
@@ -65,7 +65,7 @@ input::placeholder{
 #players {
   border: solid 2px;
   overflow-y: auto;
-  height: 80%
+  height: 80%;
 }
 
 #addScore,

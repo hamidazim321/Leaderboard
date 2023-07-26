@@ -1,6 +1,57 @@
+body {
+  padding: 2% 5%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+p {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+button {
+  border: solid 2px;
+  font-size: large;
+  font-weight: 600;
+  width: fit-content;
+  cursor: pointer;
+}
+
+input {
+  border: solid 2px;
+  font-size: large;
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: black;
+}
+
 #Main {
   display: flex;
   gap: 10%;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100%;
+}
+
+#scores {
+  width: 50%;
+}
+
+#refresh {
+  margin-left: 40px;
+}
+
+#addScore {
+  width: 20%;
 }
 
 .inline-b {
@@ -14,7 +65,7 @@
 #players {
   border: solid 2px;
   overflow-y: auto;
-  height: 20vh;
+  height: 80%;
 }
 
 #addScore,
@@ -32,8 +83,14 @@
 
 .player {
   padding: 0 2%;
+  font-size: large;
+  font-weight: 600;
 }
 
 .player:nth-child(even) {
   background-color: rgb(172, 172, 172);
+}
+
+#Submit {
+  margin-left: auto;
 }

@@ -1,5 +1,4 @@
 import addScore from './addScore.js';
-import { getStorage, setStorage } from './localStorage.js';
 
 function isNumber(value) {
   return /^\d+$/.test(value);

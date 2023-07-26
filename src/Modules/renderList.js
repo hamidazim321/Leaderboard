@@ -1,5 +1,4 @@
 import addScore from './addScore.js';
-import { getStorage } from './localStorage.js';
 
 function renderList() {
   const items = getStorage();

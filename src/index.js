@@ -1,5 +1,6 @@
-import submitScore from './Modules/addScore';
-import {renderScore} from './Modules/renderList';
+import submitScore from './Modules/addScore.js';
+import { renderScore } from './Modules/renderList.js';
 import './style.css';
-submitScore()
-renderScore()
+
+submitScore();
+renderScore();

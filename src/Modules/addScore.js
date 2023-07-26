@@ -1,9 +1,38 @@
-function addScore(name, score) {
-  const container = document.querySelector('#scoreList');
-  const li = document.createElement('li');
-  li.classList.add('player');
-  li.textContent = `${name}: ${score}`;
-  container.appendChild(li);
+import url from './ScoreURL.js';
+import { handleRefesh } from './renderList.js';
+
+function isNumber(value) {
+  const regex = /^[0-9]+(\.[0-9]+)?$/;
+  return regex.test(value);
 }
 
-export default addScore;
+const postScore = async (obj) => {
+  const headers = {
+    'Content-Type': 'application/json',
+  };
+
+  return fetch(url, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(obj),
+  });
+};
+
+const submitScore = () => {
+  const form = document.querySelector('#inputForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.querySelector('#inputName').value;
+    const score = document.querySelector('#inputScore').value;
+    if (isNumber(score)) {
+      const newScore = {
+        user: name,
+        score: Number(score),
+      };
+      await postScore(newScore);
+      await handleRefesh();
+    }
+  });
+};
+
+export default submitScore;

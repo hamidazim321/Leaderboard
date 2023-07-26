@@ -11,7 +11,7 @@
   <section id="Main">
     <div class="scores">
       <p class="inline-b">Recent Scores</p>
-      <button type="button">Refresh</button>
+      <button type="button" id="refresh">Refresh</button>
       <div id="players">
         <ul id="scoreList">
         </ul>
@@ -19,9 +19,11 @@
     </div>
     <div id="addScore">
       <p>Add Your Score</p>
-      <input id="inputName" class="block" type="text" placeholder="Your Name">
-      <input id="inputScore" class="block" type="text" placeholder="Your Score">
-      <button type="button" id="Submit">Submit</button>
+      <form id="inputForm">
+        <input id="inputName" class="block" type="text" placeholder="Your Name">
+        <input id="inputScore" class="block" type="text" placeholder="Your Score">
+        <button type="submit" id="Submit">Submit</button>
+      </form>
     </div>
   </section>
 </body>
